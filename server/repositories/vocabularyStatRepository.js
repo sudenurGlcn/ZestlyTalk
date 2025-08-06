@@ -2,10 +2,10 @@
 
 
 
-import db from '../models/index.js';  // default import
+import db from '../models/index.js';  
 import { Op } from 'sequelize';
 
-const { VocabularyStat } = db; // User modelini db nesnesinden al
+const { VocabularyStat } = db; 
 
 class VocabularyStatRepository {
   async createStat(data) {
@@ -47,7 +47,7 @@ class VocabularyStatRepository {
         toUpdate.push({
           id: existing.id,
           frequency: existing.frequency + 1,
-          context_sentence: stat.context_sentence, // optionally update
+          context_sentence: stat.context_sentence, 
           suggestions: stat.suggestions,
           last_used: new Date(),
         });
