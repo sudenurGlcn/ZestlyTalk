@@ -11,9 +11,9 @@ export default (sequelize, DataTypes) => {
     },
     base_prompt: { type: DataTypes.TEXT, allowNull: true },
     is_premium: { type: DataTypes.BOOLEAN, defaultValue: false },
-    milestones: { type: DataTypes.JSONB, allowNull: true },  // Yeni eklendi
-    scenario_info: { type: DataTypes.TEXT, allowNull: true },   // yeni alan
-    milestones_tr: { type: DataTypes.JSONB, allowNull: true },  // yeni alan
+    milestones: { type: DataTypes.JSONB, allowNull: true },  
+    scenario_info: { type: DataTypes.TEXT, allowNull: true },   
+    milestones_tr: { type: DataTypes.JSONB, allowNull: true },  
   }, {
     tableName: 'scenarios',
     timestamps: false,
