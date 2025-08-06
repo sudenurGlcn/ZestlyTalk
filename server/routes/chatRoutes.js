@@ -10,7 +10,7 @@ router.post('/', authenticate, chatController.getOrCreateChat);
 router.get('/:id', authenticate, chatController.getChatById);
 router.get('/user/:userId', authenticate, chatController.getChatsByUserId);
 router.get('/user/:userId/active', authenticate, chatController.getActiveChatsByUserId);
-router.get('/user/:userId/active-completed', authenticate, chatController.getActiveAndCompletedChatsByUser); // ✅ yeni
+router.get('/user/:userId/active-completed', authenticate, chatController.getActiveAndCompletedChatsByUser); 
 router.get('/user/:userId/radar-scores', authenticate, chatController.getRadarScores);
 router.get('/scenario/:scenarioId', authenticate, chatController.getChatsByScenarioId);
 router.put('/:id', authenticate, chatController.updateChat);
