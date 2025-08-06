@@ -1,4 +1,4 @@
-// src/config/sequelize.js (veya uygun bir path)
+
 
 import { Sequelize } from 'sequelize';
 import dotenv from 'dotenv';
