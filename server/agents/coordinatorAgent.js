@@ -43,7 +43,7 @@ export default class CoordinatorAgent extends AgentBase {
       () => new GrammarAnalysisAgent().handleRequest({ text: userMessage }),
       () => new VocabularyAnalysisAgent().handleRequest({ text: userMessage, chatId, context: enrichedContext }),
       () => new FluencyAgent().handleRequest({ text: userMessage }),
-      () => milestoneAgent.handleRequest({ chatId, userMessage }), // ✅ milestone DB'ye progress yazar
+      () => milestoneAgent.handleRequest({ chatId, userMessage }), 
     ];
 
     // 5 task paralel çalıştırılır
@@ -201,6 +201,6 @@ function computeVocabularyScore(userLevel, targetLevel) {
   const diff = userLevel - targetLevel;
 
   if (diff === 0) return baseScore;
-  if (diff < 0) return Math.max(baseScore + diff * 15, 20); // alt seviyedeyse puan kırılır
-  if (diff > 0) return Math.min(baseScore + diff * 10, 120); // üst seviyedeyse ödüllendirilir
+  if (diff < 0) return Math.max(baseScore + diff * 15, 20); 
+  if (diff > 0) return Math.min(baseScore + diff * 10, 120); 
 }
