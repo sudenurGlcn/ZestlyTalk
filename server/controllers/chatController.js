@@ -9,7 +9,7 @@ class ChatController {
       res.status(201).json({
         chatId: result.chatId,
         response: result.response,
-        // Gerekirse chat detayları da eklenebilir
+        
       });
     } catch (error) {
       next(error);
