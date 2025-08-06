@@ -34,7 +34,7 @@ const modelFiles = fs.readdirSync(__dirname)
 
 for (const file of modelFiles) {
   const modelPath = path.join(__dirname, file);
-  const modelModule = await import(pathToFileURL(modelPath).href); // ✅ doğru format
+  const modelModule = await import(pathToFileURL(modelPath).href); 
   const defineModel = modelModule.default;
   const model = defineModel(sequelize, DataTypes);
   db[model.name] = model;
