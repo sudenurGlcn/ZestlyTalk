@@ -2,10 +2,7 @@
 import freeTalkChatService from '../services/freeTalkChatService.js';
 
 class FreeTalkChatController {
-  /**
-   * POST /api/free-talk-chat/create
-   * Body: { user_id: number }
-   */
+ 
   async createChat(req, res, next) {
     try {
       const { user_id } = req.body;
@@ -25,10 +22,7 @@ class FreeTalkChatController {
     }
   }
 
-  /**
-   * GET /api/free-talk-chat/:chatId
-   * Chat ve mesajları döner
-   */
+  
   async getChat(req, res, next) {
     try {
       const { chatId } = req.params;
