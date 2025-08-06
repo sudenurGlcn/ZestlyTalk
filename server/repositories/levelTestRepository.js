@@ -2,9 +2,9 @@
 
 
 
-import db from '../models/index.js';  // default import
+import db from '../models/index.js';  
 
-const { LevelTest } = db; // User modelini db nesnesinden al
+const { LevelTest } = db; 
 
 
 

@@ -9,8 +9,6 @@ export default class HintAgent extends AgentBase {
   }
 
   /**
-   * Kullanıcı, Gemini'nin son cevabına karşılık ne yazacağını bilemediğinde çağrılır.
-   * Bu nedenle en son 4 mesaj alınır, en sondaki Gemini'nin cevabıdır.
    * @param {Object} param0
    * @param {number} param0.chatId
    * @returns {Promise<Object>} - { hints: ["..."] }

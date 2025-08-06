@@ -1,7 +1,7 @@
 // src/repositories/ScenarioRepository.js
-import db from '../models/index.js';  // default import
+import db from '../models/index.js';  
 
-const { Scenario } = db; // User modelini db nesnesinden al
+const { Scenario } = db; 
 
 class ScenarioRepository {
   async createScenario(data) {
@@ -33,7 +33,7 @@ class ScenarioRepository {
 
   return await Scenario.findAll({
     where: { category },
-    attributes: ['id', 'title', 'difficulty_level', 'category'], // sadece gerekli alanları getir
+    attributes: ['id', 'title', 'difficulty_level', 'category'], 
   });
 }
 }

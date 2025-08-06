@@ -49,7 +49,7 @@ class ScenarioController {
 
   async getScenariosByCategory(req, res, next) {
     try {
-      const { category } = req.query; // text olarak frontend query parametresiyle gönderiyor
+      const { category } = req.query; 
       if (!category) {
         return res.status(400).json({ message: 'Category is required' });
       }

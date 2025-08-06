@@ -1,8 +1,8 @@
 // src/repositories/ChatRepository.js
-import db from '../models/index.js';  // default import
+import db from '../models/index.js';  
 import { Sequelize } from 'sequelize';
 
-const { Chat } = db; // User modelini db nesnesinden al
+const { Chat } = db; 
 
 class ChatRepository {
   async createChat(data) {

@@ -48,12 +48,11 @@ class GrammarErrorController {
   }
 
   /**
-   * Kullanıcının haftalık veya aylık grammer hata topicleri ve toplam hata sayısı
    * @param req.query.period: 'week' | 'month'
    */
   async getUserErrorTopicsByPeriod(req, res, next) {
     try {
-      const userId = req.user.sub; // authenticate middleware'den geliyor varsayıyorum
+      const userId = req.user.sub; 
       const { period } = req.query;
 
       if (!['week', 'month'].includes(period)) {
@@ -65,7 +64,7 @@ class GrammarErrorController {
 
       if (period === 'week') {
         // Haftanın başı (Pazartesi)
-        const day = now.getDay(); // Pazar=0 ... Cumartesi=6
+        const day = now.getDay(); 
         const diff = now.getDate() - day + (day === 0 ? -6 : 1);
         startDate = new Date(now.setDate(diff));
         startDate.setHours(0,0,0,0);
