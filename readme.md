@@ -155,43 +155,53 @@ Analiz için loglanan veriler, gizlilik ilkelerine uygun şekilde saklanır.
 
 
 ## 🛠️ Başlangıç Rehberi
-1. Projeyi Klonlayın
+### Projeyi Klonlayın
+```bash
 git clone https://github.com/sudenurGlcn/ZestlyTalk.git
 cd ZestlyTalk
-
-2. .env Dosyasını Yapılandırın
+```
+### 📁 .env Dosyasını Yapılandırın
 Projenin server klasörü içinde .env adında bir dosya oluşturun ve içine API anahtarınızı ekleyin:
 
-### .env
+#### .env
+```env
 GEMINI_API_KEY=your-api-key
 GEMINI_API_URL=https://generativelanguage.googleapis.com/v1
-### Veritabanı bağlantı bilgileriniz
+```
+#### Veritabanı bağlantı bilgileriniz
+```env
 DB_USER=postgres
 DB_PASSWORD=your_password
 DB_HOST=localhost
 DB_PORT=5432
 DB_NAME=your_database_name
-
-3. Sunucu (Backend) Kurulumu
-### Proje ana dizininden server klasörüne geçin
+```
+### 🚀 Sunucu (Backend) Kurulumu
+#### Proje ana dizininden server klasörüne geçin
+```bash
 cd server
-
-### Gerekli paketleri yükleyin
+```
+#### Gerekli paketleri yükleyin
+```bash
 npm install
-
-### Sunucuyu başlatın
+```
+#### Sunucuyu başlatın
+```bash
 npm start
-
-4. İstemci (Frontend) Kurulumu
-### Proje ana dizininden client klasörüne geçin
+```
+### 💻 İstemci (Frontend) Kurulumu
+#### Proje ana dizininden client klasörüne geçin
+```bash
 cd client
-
-### Gerekli paketleri yükleyin
+```
+#### Gerekli paketleri yükleyin
+```bash
 npm install
-
-### React uygulamasını başlatın
+```
+#### React uygulamasını başlatın
+```bash
 npm start
-
+```
 ## 💡 Neden Bu Proje?
 Gerçek hatalara dayalı kişiselleştirilmiş öğrenme sunar.
 
@@ -210,3 +220,4 @@ Kullanıcı dostu arayüzü ile öğrenme deneyimini sadeleştirir ve hızlandı
 ## 📄 Lisans
 
 Bu proje GPLv3 lisansı altında lisanslanmıştır. Daha fazla bilgi için [LICENSE](LICENSE) dosyasına bakınız.
+
