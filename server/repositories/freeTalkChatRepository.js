@@ -5,7 +5,7 @@ const { Chat } = db;
 
 class FreeTalkChatRepository {
   async createFreeTalkChat(data) {
-    // Serbest sohbet chat'i scenario_id'siz, status active olarak yaratıyoruz
+    
     return await Chat.create({
       user_id: data.user_id,
       status: 'active',
