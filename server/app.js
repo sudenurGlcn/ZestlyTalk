@@ -3,7 +3,7 @@ import cookieParser from 'cookie-parser';
 import cors from 'cors';
 import errorHandler from './middlewares/errorHandler.js';
 
-// Routes importları (dizin yapına göre .js uzantısı önemli)
+
 import userRoutes from './routes/userRoutes.js';
 import authRoutes from './routes/authRoutes.js';
 import scenarioRoutes from './routes/scenarioRoutes.js';
@@ -41,7 +41,7 @@ app.get('/', (req, res) => {
   res.send('✅ API is running');
 });
 
-// Hata yakalama middleware'i (en sona eklenmeli)
+
 app.use(errorHandler);
 
 export default app;
