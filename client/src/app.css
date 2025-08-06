@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.swal-confirm-btn, .swal-cancel-btn {
+  padding: 0.6rem 1.5rem !important;
+  margin: 0 0.5rem !important;
+  border-radius: 0.5rem !important;
+  font-size: 1rem !important;
+  font-weight: 600 !important;
+  border: none !important;
+  min-width: 120px;
+  transition: background 0.2s, color 0.2s;
+  display: inline-block;
+}
+.swal-confirm-btn {
+  background-color: #3085d6 !important;
+  color: #fff !important;
+}
+.swal-confirm-btn:hover {
+  background-color: #2563eb !important;
+}
+.swal-cancel-btn {
+  background-color: #d33 !important;
+  color: #fff !important;
+}
+.swal-cancel-btn:hover {
+  background-color: #b91c1c !important;
+}
+
+
+.swal2-close {
+  position: absolute !important;
+  top: 10px !important;
+  right: 10px !important;
+  font-size: 2rem !important;
+  color: #d33 !important;
+  background: none !important;
+  border: none !important;
+  outline: none !important;
+  cursor: pointer !important;
+  z-index: 10000 !important;
+  opacity: 1 !important;
+  transition: color 0.2s;
+}
+.swal2-close:hover {
+  color: #b91c1c !important;
+}
+
+/* Test başlatma SweetAlert butonları için özel stiller */
+.swal2-confirm-custom {
+  transition: all 0.2s ease !important;
+  transform: scale(1) !important;
+}
+
+.swal2-confirm-custom:hover {
+  transform: scale(1.05) !important;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2) !important;
+}
+
+.swal2-cancel-custom {
+  transition: all 0.2s ease !important;
+  transform: scale(1) !important;
+}
+
+.swal2-cancel-custom:hover {
+  transform: scale(1.05) !important;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2) !important;
+}
+
+
