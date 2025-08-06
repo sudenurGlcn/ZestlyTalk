@@ -6,7 +6,7 @@ const router = express.Router();
 
 router.post('/', authenticate, scenarioController.createScenario);
 router.get('/', authenticate, scenarioController.getAllScenarios);
-router.get('/by-category', authenticate, scenarioController.getScenariosByCategory); // <-- Yeni eklendi
+router.get('/by-category', authenticate, scenarioController.getScenariosByCategory); 
 router.get('/:id', authenticate, scenarioController.getScenarioById);
 router.put('/:id', authenticate, scenarioController.updateScenario);
 router.delete('/:id', authenticate, scenarioController.deleteScenario);
